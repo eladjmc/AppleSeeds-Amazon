@@ -204,10 +204,10 @@ header {
     border-left: #cdcdcd .5px solid;
 }
 
-.navbar .navbar-search-input:focus ~ .overlay {
+.navbar .navbar-search-input:focus  ~ .overlay {
 position: absolute;
-width: 100vw;
-height: 100vh ;
+width: 99.36vw;
+height: 200vh ;
 background-color: #131921;
 opacity: 0.6;
 top: 8.8rem;
@@ -356,7 +356,7 @@ transition: all 0.5s ease;
 }
 .number-of-items{
     position: absolute;
-    left:2.5rem;
+    left:2.6rem;
     top:.5rem;
     color: #f08804;
     font-size: 1.6rem;
