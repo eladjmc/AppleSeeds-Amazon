@@ -171,7 +171,7 @@
 }
 
 .main-container .right {
-  width: 43.6rem;
+  width: 42.6rem;
   height: 100%;
   padding: 2rem 1.7rem;
   border-radius: 8px;
@@ -362,8 +362,9 @@
   position: relative;
   width: 423.4px;
   height: 428.4px;
-  background: url("/assets/images/display_item0.png") no-repeat center
-    center/cover;
+  background: url("/assets/images/display_item0.png") no-repeat center;
+  background-size: 423px 428gitpx;
+    
 }
 
 .btn-shr  i {
@@ -415,9 +416,11 @@
   display: flex;
   flex-direction: column;
   gap: .8rem;
+  padding-top: 5rem;
 }
 
 .small-images-container > img {
+  
   width: 38px;
   height: 50px;
   background: #fff;
