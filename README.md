@@ -15,7 +15,11 @@ https://appleseeds-amazon.netlify.app/
 
 ![Alt text](assets/images/Screenshot1.png?raw=true "Title")
 
+
+
 ![plot](./assets/images/Screenshot3.png)
+
+
 
 ![plot](./assets/images/Screenshot2.png)
 
