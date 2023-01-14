@@ -135,6 +135,7 @@ filter: contrast(1.25);
 
 .container-explore{
     width: 100%;
+    max-width: 1500px;
     padding: 0 1.6rem;
     padding-top: 1.2rem;
     display: flex;

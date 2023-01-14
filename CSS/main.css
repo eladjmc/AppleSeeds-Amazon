@@ -24,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 1.4rem;
-  border-bottom: rgba(51, 51, 51, 0.177) solid 1px;
+  
 }
 
 .link-main {
@@ -51,6 +51,7 @@
   margin-top: 20px;
   padding: 14px 18px 18px;
   padding-top: 0;
+  border-bottom: rgba(51, 51, 51, 0.177) solid 1px;
 }
 
 .main-container .right-wrapper {
