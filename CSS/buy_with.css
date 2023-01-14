@@ -1,5 +1,6 @@
 .container-bought-together {
   width: 100%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   padding: 0 12px;
@@ -81,7 +82,7 @@
     padding: 10px 3px;
     color: #cdd9d9;
 }
-.buy-checkboxs  .total-price-amount ,.link-main {
+.buy-checkboxs  .total-price-amount , .checkbox-buy2 >.link-main {
     color: #cdd9d9;
 }
 
@@ -112,10 +113,10 @@ filter: contrast(0.9);
     font-weight: 400;
 }
 
-.checkbox-buy2 .link-main:hover{
+.checkbox-buy2 >.link-main:hover{
     opacity: 0.3;
 }
-.checkbox-buy2 input:checked ~ .link-main{
+.checkbox-buy2 input:checked ~  .link-main{
 color: var(--text-color-main-links);
 line-height: 2rem;
 cursor: pointer;
@@ -131,4 +132,209 @@ filter: contrast(1.25);
 #buy-item1:checked, #buy-item2:checked{
     opacity: 1;
 }
+
+.container-explore{
+    width: 100%;
+    padding: 0 1.6rem;
+    padding-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-explore h2 {
+    color: #333;
+    font-weight: 700;
+    font-family: Arial,sans-serif;
+}
+
+.sponsored{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsored .spons {
+    padding-top: 1rem;
+    color: #555555;
+    font-size: 1.2rem;
+    opacity: .9;
+    cursor: pointer;
+    display: flex;
+    gap:3px;
+    align-items: center;
+    width: 7px;
+}
+
+.sponsored .spons:hover  {
+    opacity: 1;
+    color: #4e4d4d;
+}
+
+.page-browse {
+    color: #0F1111;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 20px;
+    opacity: .9;
+}
+
+
+.generic-card {
+    width: 16rem;
+    height: 34.4rem;
+    position: relative;
+    
+}
+.generic-card::after {
+    content: "generic item description";
+    display: flex;
+    position: absolute;
+    top: 10.3rem;
+    right: 0rem;
+    width: 14rem;
+    height: 2.3rem;
+    background-color: #fdfdfd;
+    border: #565959 solid 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: #2b2b2b;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.generic-card:hover::after{
+    opacity: 1;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    
+}
+
+.carousel-items{
+    width: calc(100% - 8rem);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-button{
+    display: flex;
+    align-items: center;
+    
+}
+
+.side-btn-box:hover {
+    background-color: #f7fafa;
+}
+.side-btn-box {
+    font-size: 1.6rem;
+    cursor: pointer;
+    height: 3.7rem;
+    width: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#575757 ;
+    border-radius: 7px;
+    border: #5555557b 1px solid;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    
+}
+
+.card-item1 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela1.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+.card-item2 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela2.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+.card-item3 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela3.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+.card-item4 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela4.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+.card-item5 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela5.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+.card-item6 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela6.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+.card-item7 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela7.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+.card-item8 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.amount-of-voters.link-main{
+    text-decoration: none;
+    color: var(--text-color-main-links);
+
+}
+.card-raiting, .pricing{
+    display: flex;
+    gap:6px;
+    cursor: pointer;
+}
+
+.pricing > span {
+    color: #B12704;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    
+}
+
+.prime-image {
+    background: url('/assets/images/prime-sprite.png') no-repeat -400px -222px;
+	width: 49px;
+	height: 14px;
+}
+
+.card-part5 {
+    color: #555555;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.card-part5 .crossed-price {
+    text-decoration: line-through;
+}
+
 

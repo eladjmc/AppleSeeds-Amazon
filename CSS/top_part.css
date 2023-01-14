@@ -206,8 +206,8 @@ header {
 
 .navbar .navbar-search-input:focus  ~ .overlay {
 position: absolute;
-width: 99.36vw;
-height: 200vh ;
+width: 99.47vw;
+height: 250vh ;
 background-color: #131921;
 opacity: 0.6;
 top: 8.8rem;

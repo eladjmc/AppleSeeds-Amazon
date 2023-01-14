@@ -84,7 +84,7 @@
   gap: 0.6rem;
 }
 
-.main-container .rating-container .stars-image {
+ .stars-image {
   background: url("/assets/images/sprites_rating.png") no-repeat -2px -82px;
   width: 80px;
   height: 15px;
