@@ -1,6 +1,6 @@
 # AppleSeeds-Amazon
 
-I was given a task @AppleSeeds Bootcamp to make a a copy of an Amazon product sale while only using ```HTML``` and ```CSS``` (And one component of ```JavaScript```)
+I was given a task @AppleSeeds Bootcamp to make a a copy of an Amazon product sale page while only using ```HTML``` and ```CSS``` (And one component of ```JavaScript```)
 
 I randomly picked a product page and copied it, the store page I made was for a Hat
 
