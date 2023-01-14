@@ -129,8 +129,6 @@
 
 
 
-
-
     <!-- ################################################################################################################ -->
     <!-- #                                                                                                              # -->
     <!-- #                               Main container part - left and right                                           # -->
@@ -140,10 +138,26 @@
     <section class="main-container">
         <div class="main-wrapper">
 
+
+
+    <!-- ################################################################################################################ -->
+    <!-- #                               Main container part - left                                                     # -->
+    <!-- ################################################################################################################ -->        
             <div class="left-wrapper">
                 <!-- TO-DO -> put the little pictures here and make it absolute position  -->
                 <div class="image-container"> 
-                    <img style ="height:440px; width:400px" src="/assets/images/display_item1.jpg" alt="">
+                    <div class="small-images-container">
+                        <img class="small-image image-active" src="/assets/images/smal_display_item0.jpg" alt="1">
+                        <img class="small-image" src="/assets/images/smal_display_item1.jpg" alt="2">
+                        <img class="small-image" src="/assets/images/smal_display_item2.jpg" alt="3">
+                        <img class="small-image" src="/assets/images/smal_display_item3.jpg" alt="4">
+                        <img class="small-image" src="/assets/images/smal_display_item4.jpg" alt="4">
+                    </div>
+                    <div id="big-image" class="big-image">
+                        <div class="btn-shr">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -154,6 +168,9 @@
 
 
             <div class="right-wrapper">
+    <!-- ################################################################################################################ -->
+    <!-- #                               Main container part - middle                                                   # -->
+    <!-- ################################################################################################################ --> 
 
                 <div class="middle">
                     <span class="link-main">Brand: CLERO&</span>
@@ -193,6 +210,9 @@
 
 
 
+    <!-- ################################################################################################################ -->
+    <!-- #                               Main container part - right                                                    # -->
+    <!-- ################################################################################################################ -->     
 
                 <div class="right">
                     <div class="middle-price">
@@ -282,13 +302,13 @@
     <!-- #                                                                                                              # -->
     <!-- ################################################################################################################ -->
 
-
     <div class="container-bought-together">
         ​
     </div>
     <div class="container-explore">
         ​
     </div>
+    <script src="/scripts/main.js"></script>
 </body>
 
 </html>
