@@ -2,7 +2,7 @@
 
 I was given a task @AppleSeeds Bootcamp to make a a copy of an Amazone product sale while only using ```HTML``` and ```CSS``` (And one component of ```JavaScript```)
 
-I randomly picked a product page and copied it, the store page I made is for a Hat
+I randomly picked a product page and copied it, the store page I made was for a Hat
 
 My main focus was on the small details to make sure the page looks the same.
 
