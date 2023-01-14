@@ -201,11 +201,7 @@
 .main-container .right a:hover {
   color: orange;
 }
-.container-bought-together,
-.container-explore {
-  height: 10vh;
-  width: 90%;
-}
+
 
 .free-delivery-right {
   padding-top: 1rem;
@@ -291,6 +287,7 @@
 }
 
 .add-to-list-btn {
+  cursor: pointer;
   height: 2.9rem;
   border-radius: 3px;
   border: 1px solid #ddd;
@@ -342,23 +339,60 @@
 .image-container {
   display: flex;
   gap:.5rem;
-  padding-top: 5rem;
   position: sticky;
   top: 0;
   left: 0;
   max-height: 549px;
-  max-width: 423px;
+  max-width: 463.4px;
   height: 100%;
   width: 100%;
+  
+}
+
+.background-big-image {
+  width: 423.4px;
+  height: 549px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#fff, #fff);
 }
 
 .big-image {
   position: relative;
-  width: 370.2px;
-  height: 375.2px;
-  background: url("/assets/images/display_item0.jpg") no-repeat center
+  width: 423.4px;
+  height: 428.4px;
+  background: url("/assets/images/display_item0.png") no-repeat center
     center/cover;
 }
+
+.btn-shr  i {
+  position: relative;
+}
+
+.btn-shr  i > .s-tooltip {
+  display: flex;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  width: 4.8rem;
+  height: 2.3rem;
+  background-color: #fdfdfd;
+  border: #565959 solid 1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: #2b2b2b;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-shr:hover i > .s-tooltip {
+  opacity: 1;
+}
+
 
 .btn-shr {
   width: 3.15rem;
@@ -380,7 +414,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: .8rem;
 }
 
 .small-images-container > img {
@@ -400,7 +434,6 @@
 }
 
 .small-images-container > img.image-active {
-  border-color: #e77600; 
   border: #e77600 1px solid ;
   border-radius: 2px; 
   box-shadow: 0 0 3px 2px rgba(228, 123, 17, 0.485)
