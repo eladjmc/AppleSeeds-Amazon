@@ -6,7 +6,6 @@ const onEnter = (event,index) => {
     smallImages.forEach(smallImage => {
         smallImage.classList.remove("image-active");
     });
-    console.log(event);
     event.target.classList.add("image-active");
 }
 

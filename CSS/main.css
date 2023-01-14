@@ -61,7 +61,7 @@
 }
 
 .main-container .middle {
-  width: 73.46rem;
+  /* width: 73.46rem; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -171,7 +171,7 @@
 }
 
 .main-container .right {
-  width: 22.6rem;
+  width: 43.6rem;
   height: 100%;
   padding: 2rem 1.7rem;
   border-radius: 8px;
@@ -399,8 +399,9 @@
   vertical-align: middle;
 }
 
-.image-active {
+.small-images-container > img.image-active {
   border-color: #e77600; 
+  border: #e77600 1px solid ;
   border-radius: 2px; 
-  box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%)
+  box-shadow: 0 0 3px 2px rgba(228, 123, 17, 0.485)
 }
