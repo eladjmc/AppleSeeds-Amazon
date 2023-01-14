@@ -76,3 +76,59 @@
   color: #1196ab;
   font-size: 1.8rem;
 }
+
+.buy-checkboxs {
+    padding: 10px 3px;
+    color: #cdd9d9;
+}
+.buy-checkboxs  .total-price-amount ,.link-main {
+    color: #cdd9d9;
+}
+
+.buy-check1, .buy-check2{
+    opacity: 0.3;
+}
+
+.buy-checkboxs .link-main {
+font-weight: 400;
+filter: contrast(0.9);
+}
+
+.checkbox-buy2{
+    padding-top: .7rem;
+}
+
+.checkbox-buy1 input:checked + .buy-bold-text {
+    color: #0f1111;
+    font-weight: 500;
+}
+.checkbox-buy1 input:checked ~ .buy-text {
+    color: #0f1111;
+    font-weight: 400;
+}
+
+.checkbox-buy1 input:checked ~ .total-price-amount , .checkbox-buy2 input:checked ~ .total-price-amount {
+    color: #b12704;
+    font-weight: 400;
+}
+
+.checkbox-buy2 .link-main:hover{
+    opacity: 0.3;
+}
+.checkbox-buy2 input:checked ~ .link-main{
+color: var(--text-color-main-links);
+line-height: 2rem;
+cursor: pointer;
+font-weight: 400;
+filter: contrast(1.25);
+}
+.checkbox-buy2 input:checked ~ .link-main:hover{
+    opacity: 1;
+    color: var(--link-hover);
+    filter: contrast(1);
+}
+
+#buy-item1:checked, #buy-item2:checked{
+    opacity: 1;
+}
+

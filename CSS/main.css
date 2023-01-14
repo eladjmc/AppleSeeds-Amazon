@@ -362,9 +362,8 @@
   position: relative;
   width: 423.4px;
   height: 428.4px;
-  background: url("/assets/images/display_item0.png") no-repeat center;
-  background-size: 423px 428gitpx;
-    
+  background: url("/assets/images/display_item0.png") no-repeat center
+    center/cover;
 }
 
 .btn-shr  i {
