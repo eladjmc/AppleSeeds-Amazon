@@ -10,61 +10,71 @@ const checkboxItem2 = document.querySelector(".buy-check2");
 let KaruselaPage = 1;
 
 karuselaToggleLeft.addEventListener("click", () => {
-    if (KaruselaPage != 1) {
-        karuselaPageItems1.forEach((card) => {
-            card.style = `display : block;`;
-        });
-        
-        karuselaPageItems2.forEach((card) => {
-            card.style = `display : none;`;
-        });
-        KaruselaPage = 1;
-        karuselaCurrentPage.innerHTML = "Page 1";
-    }
+  if (KaruselaPage != 1) {
+    karuselaPageItems1.forEach((card) => {
+      card.style = `display : block;`;
+    });
+
+    karuselaPageItems2.forEach((card) => {
+      card.style = `display : none;`;
+    });
+    KaruselaPage = 1;
+    karuselaCurrentPage.innerHTML = "Page 1";
+  }
 });
 karuselaToggleRight.addEventListener("click", () => {
-    if (KaruselaPage != 2) {
-        karuselaPageItems2.forEach((card) => {
-            card.style = `display : block;`;
-        });
-        
-        karuselaPageItems1.forEach((card) => {
-            card.style = `display : none;`;
-        });
-        KaruselaPage = 2;
-        karuselaCurrentPage.innerHTML = "Page 2";
-    }
+  if (KaruselaPage != 2) {
+    karuselaPageItems2.forEach((card) => {
+      card.style = `display : block;`;
+    });
+
+    karuselaPageItems1.forEach((card) => {
+      card.style = `display : none;`;
+    });
+    KaruselaPage = 2;
+    karuselaCurrentPage.innerHTML = "Page 2";
+  }
 });
 
 const addsUpSum = () => {
-    let changingSum = 29.38;
-    const totalPrice = document.querySelector(".lol");
-    const itemPrice1 = 17.99;
-    const itemPrice2 = 11.39;
+  let changingSum = 29.38;
+  const totalPrice = document.querySelector(".total-price-amount.checkboxing");
+
+  const itemPrice1 = 17.99;
+  const itemPrice2 = 11.39;
   if (!checkboxItem1.checked || !checkboxItem2.checked) {
-    document.querySelector('.add-sign-container').style = "display:none";
-    if(!checkboxItem1.checked ){
-        document.querySelector('.item1').style = "display:none";
-        
+    document.querySelector(".add-sign-container").style = "display:none";
+    if (!checkboxItem1.checked) {
+      document.querySelector(".item1").style = "display:none";
+      changingSum -= itemPrice1;
     }
-    if(!checkboxItem2.checked)
-    document.querySelector('.item2').style = "display:none";
+    if (!checkboxItem2.checked) {
+      document.querySelector(".item2").style = "display:none";
+      changingSum -= itemPrice2;
+    }
   }
-  if(checkboxItem1.checked && checkboxItem2.checked){
-    document.querySelector('.item2').style = "display:flex";
-    document.querySelector('.item1').style = "display:flex";
-    document.querySelector('.add-sign-container').style = "display:flex";
-    document.querySelector('.price-and-buy').style = "display:block";
+  if (checkboxItem1.checked && checkboxItem2.checked) {
+    document.querySelector(".item2").style = "display:flex";
+    document.querySelector(".item1").style = "display:flex";
+    document.querySelector(".add-sign-container").style = "display:flex";
+    
   }
-  if(!checkboxItem1.checked && !checkboxItem2.checked){
-    document.querySelector('.price-and-buy').style = "display:none";
+  if (!checkboxItem1.checked && !checkboxItem2.checked) {
+    document.querySelector(".price-and-buy").style = "display:none";
   }
-  if(checkboxItem1.checked) {
-    document.querySelector('.item1').style = "display:flex";
+  if (checkboxItem1.checked) {
+    document.querySelector(".item1").style = "display:flex";
+    document.querySelector(".price-and-buy").style = "display:block";
   }
-  if(checkboxItem2.checked) {
-    document.querySelector('.item2').style = "display:flex";
+  if (checkboxItem2.checked) {
+    document.querySelector(".item2").style = "display:flex";
+    document.querySelector(".price-and-buy").style = "display:block";
   }
+
+  let priceString = `$${changingSum}`;
+  console.log(priceString);
+  totalPrice.innerHTML = priceString;
+  console.log(totalPrice);
 };
 
 const onEnter = (event, index) => {
