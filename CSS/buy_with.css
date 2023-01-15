@@ -304,6 +304,70 @@ filter: contrast(1.25);
     cursor: pointer;
 }
 
+.card-item9 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.card-item10 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.card-item11 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.card-item12 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.card-item13 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.card-item14 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.card-item15 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
+.card-item16 .card-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("/assets/images/karusela8.jpg") no-repeat center
+    center/cover;
+    cursor: pointer;
+}
+
 .amount-of-voters.link-main{
     text-decoration: none;
     color: var(--text-color-main-links);
@@ -336,6 +400,10 @@ filter: contrast(1.25);
 }
 .card-part5 .crossed-price {
     text-decoration: line-through;
+}
+
+.karosela-page2 {
+    display: none;
 }
 
 
